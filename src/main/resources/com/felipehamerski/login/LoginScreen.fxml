@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/21" fx:controller="com.felipehamerski.login.controller.LoginScreenController">
+   <children>
+      <Label layoutX="172.0" layoutY="24.0" text="Conectar-se">
+         <font>
+            <Font name="Times New Roman Bold" size="50.0" />
+         </font>
+      </Label>
+      <TextField fx:id="userTextField" layoutX="207.0" layoutY="96.0" promptText="Nome">
+         <font>
+            <Font name="Times New Roman" size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="emailTextField" layoutX="207.0" layoutY="140.0" promptText="E-mail">
+         <font>
+            <Font name="Times New Roman" size="15.0" />
+         </font>
+      </TextField>
+      <PasswordField fx:id="userPasswordField" layoutX="207.0" layoutY="188.0" promptText="Senha">
+         <font>
+            <Font name="Times New Roman" size="15.0" />
+         </font>
+      </PasswordField>
+      <Button fx:id="loginButton" layoutX="234.0" layoutY="243.0" mnemonicParsing="false" onAction="#login" text="Conectar">
+         <font>
+            <Font name="Times New Roman Bold" size="25.0" />
+         </font>
+      </Button>
+      <Label layoutX="114.0" layoutY="342.0" text="Não Possui uma conta?">
+         <font>
+            <Font name="Times New Roman" size="25.0" />
+         </font>
+      </Label>
+      <Hyperlink fx:id="signUpHyperlink" layoutX="348.0" layoutY="337.0" onAction="#createAccount" text="Cadastrar-se">
+         <font>
+            <Font name="Times New Roman" size="25.0" />
+         </font>
+      </Hyperlink>
+      <Label fx:id="msgLoggedLabel" layoutX="100.0" layoutY="305.0" prefHeight="17.0" prefWidth="400.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
