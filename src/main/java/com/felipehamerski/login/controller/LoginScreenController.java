@@ -38,10 +38,11 @@ public class LoginScreenController {
     }
 
     @FXML
-    public void login(ActionEvent event) {
+    public void login(ActionEvent event) throws IOException {
         for (Usuário user: UserDAO.getUsers()){
             if (userTextField.getText().equals("Salomão") && emailTextField.getText().equals("salomao@gmail.com") && userPasswordField.getText().equals("123456")){
             msgLoggedLabel.setText("Login realizado com sucesso");
+            App.setRoot("UsersScreen");
         }else{
             msgLoggedLabel.setText("Usuário ou senha incorretos, tente novamente");
             }
