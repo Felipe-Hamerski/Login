@@ -4,10 +4,18 @@ import com.felipehamerski.login.model.Usuário;
 import java.util.ArrayList;
 
 public class UserDAO {
-    private ArrayList<Usuário> users = new ArrayList<>();
+    private static ArrayList<Usuário> users = new ArrayList<>();
     
     public void addUser(Usuário usuário){
         users.add(usuário);
+    }
+
+    public static ArrayList<Usuário> getUsers() {
+        return users;
+    }
+
+    public static void setUsers(ArrayList<Usuário> users) {
+        UserDAO.users = users;
     }
     
     public void printUsers() {

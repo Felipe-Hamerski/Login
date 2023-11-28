@@ -1,6 +1,8 @@
 package com.felipehamerski.login.controller;
 
 import com.felipehamerski.login.App;
+import com.felipehamerski.login.dao.UserDAO;
+import com.felipehamerski.login.model.Usuário;
 import java.io.IOException;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -37,6 +39,13 @@ public class LoginScreenController {
 
     @FXML
     public void login(ActionEvent event) {
-        
+        for (Usuário user: UserDAO.getUsers()){
+            if (userTextField.getText().equals("Salomão") && emailTextField.getText().equals("salomao@gmail.com") && userPasswordField.getText().equals("123456")){
+            msgLoggedLabel.setText("Login realizado com sucesso");
+        }else{
+            msgLoggedLabel.setText("Usuário ou senha incorretos, tente novamente");
+            }
+        }
     }
 }
+    

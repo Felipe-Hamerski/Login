@@ -8,8 +8,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/21" fx:controller="com.felipehamerski.login.controller.LoginScreenController">
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.felipehamerski.login.controller.LoginScreenController">
    <children>
       <Label layoutX="172.0" layoutY="24.0" text="Conectar-se">
          <font>
@@ -31,7 +30,7 @@
             <Font name="Times New Roman" size="15.0" />
          </font>
       </PasswordField>
-      <Button fx:id="loginButton" layoutX="234.0" layoutY="243.0" mnemonicParsing="false" onAction="#login" text="Conectar">
+      <Button fx:id="loginButton" alignment="CENTER" contentDisplay="CENTER" layoutX="234.0" layoutY="243.0" mnemonicParsing="false" onAction="#login" text="Conectar">
          <font>
             <Font name="Times New Roman Bold" size="25.0" />
          </font>
