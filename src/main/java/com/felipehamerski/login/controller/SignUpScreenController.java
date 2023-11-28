@@ -29,6 +29,6 @@ public class SignUpScreenController {
 
     @FXML
     public void cadastrar(ActionEvent event) {
-
+        
     }
 }
